@@ -26,9 +26,8 @@ namespace DSA.Lab00
                     return player;
                 }
             }
-
             return null;
-        }
+        } 
 
         public Player? FindHighestScore()
         {
