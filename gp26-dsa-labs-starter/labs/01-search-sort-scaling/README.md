@@ -51,11 +51,17 @@ Open `SearchAlgorithms.cs` and inspect `LinearSearch`.
 Before changing anything, answer:
 
 - What does `i` represent?
+- 
 - When does the method stop early?
+- 
 - What does `-1` mean?
+- 
 - What is the best case?
+- 
 - What is the worst case?
+- 
 - If the array becomes twice as large, what happens to the worst-case amount of work?
+- 
 
 Run the existing linear-search tests.
 
