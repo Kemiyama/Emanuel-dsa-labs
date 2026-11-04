@@ -75,7 +75,32 @@ namespace DSA.Lab01.Tests
 
             Assert.That(result, Is.EqualTo(-1));
         }
-    }
+
+        /// ADDING more tests for task - 3
+        /// 
+
+
+        /// 
+        [Test]
+        public void BinarySearch_ReturnsMinusOneForEmptyArray()
+        {
+            int[] values = { };
+
+            int result = SearchAlgorithms.BinarySearch(values, 7);
+
+            Assert.That(result, Is.EqualTo(-1));
+        }
+
+        [Test]
+        public void BinarySearch_FindsTargetInSingleElementArray()
+        {
+            int[] values = { 42 };
+
+            int result = SearchAlgorithms.BinarySearch(values, 42);
+
+            Assert.That(result, Is.EqualTo(0));
+        }
+    } 
 
     [TestFixture]
     public sealed class SortAlgorithmsTests

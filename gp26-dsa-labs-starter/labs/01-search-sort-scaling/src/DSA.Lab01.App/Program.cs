@@ -7,7 +7,7 @@ Console.WriteLine("DSA Lab 1 - Search, Sort and Scaling");
 Console.WriteLine();
 
 int[] sorted = { 2, 5, 8, 12, 16, 23, 38, 41, 56, 72, 91 };
-int target = 41;
+int target = 23;
 
 Console.WriteLine($"Linear search for {target}: index {SearchAlgorithms.LinearSearch(sorted, target)}");
 Console.WriteLine($"Binary search for {target}: index {SearchAlgorithms.BinarySearch(sorted, target)}");

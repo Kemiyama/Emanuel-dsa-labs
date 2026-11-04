@@ -31,25 +31,23 @@ namespace DSA.Lab01
 
             int low = 0;
             int high = sortedValues.Length - 1;
+            int middle;
+            int middleValue;
 
             while (low <= high)
             {
-                int middle = low + ((high - low) / 2);
-                int value = sortedValues[middle];
+                middle = low + (high - low) / 2;
+                middleValue = sortedValues[middle];
 
-                if (value == target)
-                {
+                if (middleValue == target)
                     return middle;
-                }
-
-                if (value < target)
-                {
+             
+                if (middleValue < target)
                     low = middle + 1;
-                }
+                
                 else
-                {
                     high = middle - 1;
-                }
+                
             }
 
             return -1;
